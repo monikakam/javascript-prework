@@ -8,9 +8,9 @@ function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 }
 
-printMessage('Zagrałem kamień! Jeśli Twój ruch to papier, to wygrywasz!');
-
 printMessage('Zagralem ' + 'kamień' + '! Jeśli Twój ruch to papier, to wygrywasz!');
+
+printMessage('Zagralem ' + 'papier' + '! Jeśli Twój ruch to papier, to remis!');
 
 var computerMove;
 computerMove = 'kamień';
@@ -18,5 +18,15 @@ printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to papier, to wy
 
 var playerMove;
 playerMove = 'papier';
-printMessage('Zagrałem ' + playerMove + '! Jeśli Twój ruch to papier, to wygrywasz!');
+printMessage('Zagrałem ' + playerMove + '! Jeśli Twój ruch to papier, to remis!');
 
+var randomNumber;
+randomNumber = Math.floor(Math.random() * 3 + 1);
+printMessage('Wylosowana liczba to: ' + randomNumber);
+
+if (randomNumber == '1' {
+	computerMove = 'kamień';
+} else {
+	computerMove = 'nieznany ruch';
+}
+printMessage('Mój ruch: ' + computerMove);
